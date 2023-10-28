@@ -1,0 +1,101 @@
+** start of undefined **
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+    <h1 id="title">Rock Survey</h1>
+    <p id = "description">Take a survey about rocks!</p>
+    <div class ="form">
+      <form id = "survey-form">
+        <label for="name" id="name-label">Enter your name here:</label>
+        <input id="name" type="text" required placeholder="rocks rocks">
+         
+        <label for="email" id="email-label">Enter your email here:</label>
+        <input id="email" type="email" required placeholder="yanni@rocks.com">
+
+        <label for="number" id="number-label">How many rocks are you touching a day?</label>
+        <input id="number" type="number" min=0 max = 100 placeholder="insert number between 0 and 100 here">
+
+        <fieldset>
+          <legend>What are you doing at the current moment?</legend>
+          <label><input id="climbing" type="radio" name="climbing-notclimbing" value="climbing" checked> Climbing</label>
+          <label><input id="not-climbing" type="radio" name="climbing-notclimbing" value="not-climbing"> Not Climbing</label>
+        </fieldset>
+
+        <label for="dropdown" id="dropdown-label">Choose one</label>
+        <select id="dropdown">
+          <option value="option1">infinite bacon</option>          
+           <option value="option2" disabled>infinite bacon and infinite games</option>
+           <option value="option3">infinite games</option>
+        </select> 
+        <fieldset>
+            <legend>What's your favorite type of climbing?</legend>
+            <div class="checkbox-group">
+              <input id="Bouldering" type="checkbox" name="personality" value="Bouldering" checked> <label for="Bouldering">Bouldering</label>
+              <input id="Sport" type="checkbox" name="personality" value="Sport"> <label for="Sport">Sport</label>
+              <input disabled id="Speed" type="checkbox" name="personality" value="Speed"> <label for="Speed">Speed</label>
+              </div>
+          </fieldset>
+        <label for="climber-paragraph">Give a paragraph about your favorite climber (famous or not):</label>
+        <textarea id="climber-paragraph" rows="5" cols="50" placeholder="Write about your favorite climber here..."></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+#title, #description {
+  text-align:center;
+}
+form {
+  display: inline-block;
+}
+
+.form {
+  width: 80%;
+  background-color: lavender;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+fieldset, #dropdown,.form input:not([type="checkbox"]):not([type="radio"]) {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px; /* Space between input fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+fieldset {
+    display: inline-block;
+    border: 1px solid #000; /* Add a border */
+    padding: 0px; /* Add padding for content */
+}
+
+.checkbox-group {
+  width: 90%; /* Set a width for the checkbox group */
+}
+
+.checkbox-group input,
+.checkbox-group label {
+  /* color:purple; */
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+
+** end of undefined **
+
